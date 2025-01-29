@@ -23,7 +23,7 @@ import {
 import { useProductStore } from "../store/product";
 import { useState } from "react";
 
-const ProductCards = ({ product }) => {
+const ProductCard = ({ product }) => {
 	const [updatedProduct, setUpdatedProduct] = useState(product);
 
 	const textColor = useColorModeValue("gray.600", "gray.200");
@@ -158,4 +158,4 @@ const ProductCards = ({ product }) => {
 		</Box>
 	);
 };
-export default ProductCards;
+export default ProductCard;

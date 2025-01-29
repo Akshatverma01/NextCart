@@ -3,7 +3,7 @@ import { useEffect,useState } from "react";
 import { Link } from "react-router-dom";
 import { useProductStore } from "../store/product";
 import Carousel from "../components/productCarousal.jsx";
-import ProductCards from "../components/productCard.jsx"
+import {ProductCard} from '../components/productCard.jsx';
 
 const HomePage = () => {
 	const { getProducts, products } = useProductStore();
@@ -47,7 +47,7 @@ const HomePage = () => {
 					w={"80%"}
 				>
 					{products.map((product) => (
-						<ProductCards key={product._id} product={product} />
+						<ProductCard key={product._id} product={product} />
 					))}
 				</SimpleGrid>
 
