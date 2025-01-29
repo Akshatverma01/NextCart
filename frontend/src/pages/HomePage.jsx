@@ -3,7 +3,7 @@ import { useEffect,useState } from "react";
 import { Link } from "react-router-dom";
 import { useProductStore } from "../store/product";
 import Carousel from "../components/productCarousal.jsx";
-import {ProductCard} from '../components/productCard.jsx';
+import ProductCard from '../components/ProductCard.jsx';
 
 const HomePage = () => {
 	const { getProducts, products } = useProductStore();
