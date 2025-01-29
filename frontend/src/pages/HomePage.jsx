@@ -2,7 +2,7 @@ import { Container, SimpleGrid, Text, VStack ,useColorModeValue,Box} from "@chak
 import { useEffect,useState } from "react";
 import { Link } from "react-router-dom";
 import { useProductStore } from "../store/product";
-import ProductCard from "../components/Productcard.jsx" ;
+import ProductCard from "../components/productCard.jsx";
 import Carousel from "../components/productCarousal.jsx";
 import { use } from "react";
 
